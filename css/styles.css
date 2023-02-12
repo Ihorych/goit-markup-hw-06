@@ -242,6 +242,8 @@
 
     .modal{
         position: absolute;
+        display: flex;
+        flex-direction: column;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
@@ -253,6 +255,9 @@
                     0px 1px 3px rgba(0, 0, 0, 0.12),
                     0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
+        padding-top: 72px;
+        padding-left: 24px;
+        padding-right: 24px;
     }
 
     .modal-button{
@@ -266,6 +271,127 @@
         background: var(--accent);
         border: 1px solid rgba(0, 0, 0, 0.1);
         cursor: pointer; 
+    }
+
+    .modal-header{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 0.02em;
+
+        margin-bottom: 16px;
+    }
+
+    .modal-title{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: 0.04em;
+        color: #757575;
+    }
+
+    .field{
+        width: 360px;
+        height: 40px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        margin-bottom: 8px;
+        padding-left: 38px;
+
+        transition-property: border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+    }
+
+    .contact-relativ:hover .field{
+        border: 1px solid #4D5AE5;
+    }
+
+    .field:focus{
+        outline: none;
+        border:1px solid #4D5AE5;
+    }
+
+    .contact-relativ:hover .contact-icon{
+        fill: var(--primary-brand);
+    }
+
+    .field:focus + .contact-icon{
+        fill: var(--primary-brand);
+    }
+
+
+    .comment{
+        width: 360px;
+        height: 120px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: 0.04em;
+        color: rgba(117, 117, 117, 0.5);
+        padding-left: 16px;
+        padding-top: 8px;
+    }
+
+
+    .accept{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.3;
+        letter-spacing: 0.04em;
+        color: var(--subtle-text);
+    }
+
+    .privacy-check{
+        display: flex;
+        margin-bottom: 24px;
+    }
+
+    .checkbox{
+        width: 16px;
+        height: 16px;
+        border: 1.25px solid #2E2F42;
+        border-radius: 2px;
+        margin-right: 8px;
+    }
+
+
+
+    .privacy{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: 0.04em;
+        text-decoration-line: underline;
+        color: var(--primary-brand);
+    }
+
+    .send{
+        width: 169px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-relativ{
+        position: relative;
+    }
+
+    .contact-icon{
+        position: absolute;
+        top: 8px;
+        left: 16px;
+
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
     }
 
     .work-list{
@@ -573,6 +699,7 @@
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--white-base);
+        margin-bottom: 16px;
     }
     
     .footer-social{
@@ -620,16 +747,61 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    /* .link-item-footer:hover{
-        border: 1px dashed #9747FF;
-        border-radius: 5px;     
-    } */
-
     .footer-social-link:hover,
     .footer-social-link:focus{
         background-color: var(--success);
     }
 
+    .sub-wrapper{
+        margin-left: 80px;
+    }
+
+    .sub-container{
+        display: flex;
+    }
+
+    .sub-mail{
+        width: 264px;
+        height: 40px;
+        margin-right: 24px;
+        color: var(--accent);
+        background-color: transparent;
+        outline: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+    }
+
+    .sub-buttom{
+        background-color: var(--primary-brand);
+        color: var(--white-base);
+        cursor: pointer;
+        line-height: 1.5; 
+        text-align: center;
+        letter-spacing: 0.04em;
+        border-radius: 4px;
+        border-width: 0px;
+        min-width: 165px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+    }
+
+    .sub-buttom:hover,
+    .sub-buttom:focus{
+        background-color: var(--active-button);
+    }
+
+
+    .tg-icon{
+        margin-left: 16px;
+    } 
+    
     .register{
         display: flex;
         flex-direction:column;
