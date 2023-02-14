@@ -135,7 +135,6 @@
         color: var(--active-button);
     }
 
-
     .logo{
         color: var(--section-colour);
         font-family: 'Raleway';
@@ -153,6 +152,7 @@
         letter-spacing: 0.02px;
         /* color: var(--section-colour); */
         font-weight: 500;
+
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -163,7 +163,6 @@
         color: var(--active-button);
     }
 
-
     .contatc-link{
         position: relative;
         line-height: 1.5;
@@ -171,6 +170,7 @@
         font-weight: 400;
         color:var(--text-discription);
         font-style: normal;
+
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -283,7 +283,6 @@
         line-height: 1.5;
         text-align: center;
         letter-spacing: 0.02em;
-
         margin-bottom: 14px;
     }
 
@@ -301,6 +300,7 @@
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         padding-left: 38px;
+
         transition-property: border;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
@@ -367,8 +367,6 @@
     .checkbox:focus{
         accent-color: var(--active-button);
     }
-
-
 
     .privacy{
         font-weight: 400;
@@ -449,6 +447,7 @@
         height: 40px;
         width: 40px;
         background-color: var(--primary-brand);
+
         transition-property: background-color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
@@ -688,7 +687,6 @@
         background-color: var(--section-colour);
     }
 
-    
     .logo-footer{
         color: var(--accent);
         font-weight: 800;
