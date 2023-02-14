@@ -505,11 +505,12 @@
           </ul>
       </div>
       <div class="sub-wrapper">
-        <form action="">
+        
+        <form>
           <p class="footer-links">Subscribe</p>
           <div class="sub-container">
             <input type="email" name="" id="" placeholder="E-mail" class="sub-mail">
-              <button type="button" class="sub-buttom">
+              <button type="submit" class="sub-buttom">
                 <span>Subscribe</span>
                 <svg class="tg-icon" width="24" height="24">
                 <use href="images/icons.svg#icon-Frame"></use>
@@ -526,7 +527,14 @@
         <p class="modal-header">
           Leave your contacts and we will call you back
         </p>
-        <form action="" class="form"></form>
+
+        <button data-modal-close type="button" class="modal-button">
+          <svg class="social-icon" width="8" height="8">
+            <use href="images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+
+          <form action="" class="form">
             <label for="user_name" class="modal-title">Name</label>
             <div class="contact-relativ">
               <input type="text" name="user_name" id="user_name" class="field">
@@ -548,23 +556,14 @@
                 <use href="images/icons.svg#icon-email"></use>
               </svg>
             </div>
-          <label for="user_comment" class="modal-title">Comment</label>
-          <textarea name="user_comment" id="user_comment" rows="6" placeholder="Text input" class="field comment"></textarea>
-          <div class="privacy-check">
-            <input type="checkbox" class="checkbox"><Privacy class="modal-title">I accept the terms and conditions of the <a href=""><span class="privacy">Privacy Policy</span></a>
-          </div>
-          <button type="submit" class="mainpage-button send">Send</button>
-        </form>
+            <label for="user_comment" class="modal-title">Comment</label>
+            <textarea name="user_comment" id="user_comment" rows="6" placeholder="Text input" class="field comment"></textarea>
+            <div class="privacy-check">
+              <input type="checkbox" class="checkbox"><Privacy class="modal-title">I accept the terms and conditions of the <a href=""><span class="privacy">Privacy Policy</span></a>
+            </div>
+            <button type="submit" class="mainpage-button send">Send</button>
+          </form>
 
-
-        
-
-          
-        <button data-modal-close type="button" class="modal-button">
-          <svg class="social-icon" width="8" height="8">
-            <use href="images/icons.svg#icon-close-black-18dp-2-1"></use>
-          </svg>
-        </button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
