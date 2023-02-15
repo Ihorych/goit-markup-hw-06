@@ -292,6 +292,7 @@
         letter-spacing: 0.04em;
         color: #757575;
         margin-bottom: 4px;
+        display: block;
     }
 
     .field{
