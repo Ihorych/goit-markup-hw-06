@@ -529,7 +529,7 @@
         </p>
 
         <button data-modal-close type="button" class="modal-button">
-          <svg class="social-icon" width="8" height="8">
+          <svg class="social-icon close" width="8" height="8">
             <use href="images/icons.svg#icon-close-black-18dp-2-1"></use>
           </svg>
         </button>
@@ -558,9 +558,10 @@
             </div>
             <label for="user_comment" class="modal-title">Comment</label>
             <textarea name="user_comment" id="user_comment" rows="6" placeholder="Text input" class="field comment"></textarea>
-            <div class="privacy-check">
-              <input type="checkbox" class="checkbox"><Privacy class="modal-title">I accept the terms and conditions of the <a href=""><span class="privacy">Privacy Policy</span></a>
-            </div>
+              <label class="privacy-check">
+              <input type="checkbox" class="checkbox" id="checkbox"><Privacy class="modal-title"id="checkbox">
+                I accept the terms and conditions of the <a href=""><span class="privacy">Privacy Policy</span></a>
+              </label>
             <button type="submit" class="mainpage-button send">Send</button>
           </form>
 
